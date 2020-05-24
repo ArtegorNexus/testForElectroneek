@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<script>		
+		for (var i = 0; i < 60; i++) {
+			if (i < 20) {
+				document.write('<div style="color: #fff">');
+			} else if (i >= 20 && i < 40) {
+				document.write('<div style="color: #00f">');
+			} else {
+				document.write('<div style="color: #f00">');
+			}
+			for (var j = 0; j < 80; j++) {
+				
+					document.write('O');
+			
+			}
+			document.write('</div>');
+		}
+	</script>
+</head>
+<body style="background-color: #AAA; font-size: 12px;">
+
+
+</body>
+</html>

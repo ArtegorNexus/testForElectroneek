@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>		
+		class Person {
+			constructor (fio, phone, com) {
+				this.fio = fio;
+				this.phone = phone;
+				this.com = com;
+			}
+		}
+		var Vlad = new Person('Саяпин Владислав Маркович', '+79999999999', 'hello');
+		function addToForm() {
+			var name = document.getElementById('fio');
+			var his_phone = document.getElementById('phone');
+			var his_comment = document.getElementById('comment');
+			name.value=Vlad.fio;
+			his_phone.value=Vlad.phone;
+			his_comment.value=Vlad.com;
+		}
+	</script>
+</head>
+<body>
+
+<form action="">
+	<p width=100>ФИО</p><input type="text" id="fio"></br>
+	<p width=100>Телефон</p><input type="text" id="phone"></br>
+	<p width=100>Комментарий</p><input type="text" id="comment"></br>
+	<input type="button" value="Send" onclick="addToForm()">
+</form>
+
+</body>
+</html>

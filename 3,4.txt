@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script>		
+		function addField() {
+			var elem = document.createElement('div');
+			elem.innerHTML = '<p width=100>Телефон N</p><input type="text" id="nphone"><input type="button" id="sub" value="+" onclick="addField()">';
+			document.querySelector('div').append(elem);
+			let rem = document.getElementById('sub');
+			rem.remove();
+		}
+	</script>
+</head>
+<body>
+<form action="">
+	<p width=100>ФИО</p><input type="text" id="fio"></br>
+	<div><p width=100>Телефон</p><input type="text" id="phone"><input type="button" id="sub" value="+" onclick="addField()"></div>
+	<p width=100>Комментарий</p><input type="text" id="comment"></br>
+</form>
+
+</body>
+</html>
